@@ -56,24 +56,61 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h88-5m-Pkv">
+                                <rect key="frame" x="0.0" y="354" width="414" height="508"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompanyTableViewCell" textLabel="6h4-CX-4Zm" style="IBUITableViewCellStyleDefault" id="uqx-fw-ciW">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uqx-fw-ciW" id="Ucp-6q-Ydg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6h4-CX-4Zm">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сотрудники" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QV3-zn-Qu5">
+                                <rect key="frame" x="20" y="303" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uZx-6N-Uoj" firstAttribute="top" secondItem="C0C-sd-vHL" secondAttribute="top" constant="30" id="0SD-T2-ONh"/>
+                            <constraint firstItem="h88-5m-Pkv" firstAttribute="top" secondItem="QV3-zn-Qu5" secondAttribute="bottom" constant="15" id="1ra-qn-Jzv"/>
                             <constraint firstItem="C0C-sd-vHL" firstAttribute="trailing" secondItem="uZx-6N-Uoj" secondAttribute="trailing" constant="20" id="41O-ET-omW"/>
+                            <constraint firstItem="h88-5m-Pkv" firstAttribute="leading" secondItem="C0C-sd-vHL" secondAttribute="leading" id="5yd-Mm-vbU"/>
                             <constraint firstItem="uZx-6N-Uoj" firstAttribute="leading" secondItem="C0C-sd-vHL" secondAttribute="leading" constant="20" id="Fx8-Qs-o4m"/>
+                            <constraint firstItem="QV3-zn-Qu5" firstAttribute="leading" secondItem="C0C-sd-vHL" secondAttribute="leading" constant="20" id="T7L-bu-B3g"/>
+                            <constraint firstItem="C0C-sd-vHL" firstAttribute="trailing" secondItem="QV3-zn-Qu5" secondAttribute="trailing" constant="20" id="Y5l-2Q-qcj"/>
+                            <constraint firstItem="h88-5m-Pkv" firstAttribute="trailing" secondItem="C0C-sd-vHL" secondAttribute="trailing" id="f4p-Tr-bUk"/>
+                            <constraint firstItem="QV3-zn-Qu5" firstAttribute="top" secondItem="uZx-6N-Uoj" secondAttribute="bottom" constant="18.5" id="p5o-qv-Ier"/>
+                            <constraint firstItem="h88-5m-Pkv" firstAttribute="bottom" secondItem="C0C-sd-vHL" secondAttribute="bottom" id="xqr-vI-zsq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C0C-sd-vHL"/>
                     </view>
                     <connections>
                         <outlet property="bsLabel" destination="MdK-HJ-Zhe" id="PIj-8N-G4A"/>
                         <outlet property="catchPhraseLabel" destination="bPM-PY-hyw" id="gut-xf-BHg"/>
+                        <outlet property="employeesCompanyTable" destination="h88-5m-Pkv" id="TLc-tO-QFq"/>
                         <outlet property="nameLabel" destination="IoA-8d-Olw" id="bYq-Rd-44e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vd7-Ea-UrM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142" y="155"/>
+            <point key="canvasLocation" x="140.57971014492756" y="154.6875"/>
         </scene>
     </scenes>
 </document>

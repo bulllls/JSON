@@ -38,8 +38,9 @@ extension CompanyViewController: UITableViewDataSource, UITableViewDelegate {
         let storyboard = UIStoryboard(name: "CompanyViewControllerInfo", bundle: nil)
         guard let vc = storyboard.instantiateViewController(identifier: "CompanyViewControllerInfo") as? CompanyViewControllerInfo else {  return }
         vc.user = json[indexPath.row]
-        //vc.employees =
+        vc.employees = json.filter{$0.company == json[indexPath.row].company}
         self.navigationController?.pushViewController(vc, animated: true)
+        print("START", vc.employees)
         
     }
     

@@ -31,10 +31,11 @@ struct Geo: Decodable {
     var lat: String
     var lng: String
 }
-struct Company: Decodable {
+struct Company: Decodable, Equatable {
     var name: String
     var catchPhrase: String
     var bs: String
 }
 
 var json = [User]()
+
