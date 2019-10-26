@@ -1,16 +1,16 @@
 //
-//  TableViewCell.swift
+//  CompanyTableViewCell.swift
 //  Filistovich_Ruslan_JSON_wh
 //
-//  Created by Ruslan on 10/24/19.
+//  Created by Ruslan on 10/26/19.
 //  Copyright © 2019 Ruslan Filistovich. All rights reserved.
 //
 
 import UIKit
 
-class PersonTableViewCell: UITableViewCell {
-    @IBOutlet weak var personName: UILabel!
-    @IBOutlet weak var companyName: UILabel!
+class CompanyTableViewCell: UITableViewCell {
+    @IBOutlet weak var companyLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

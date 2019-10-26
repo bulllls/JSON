@@ -15,6 +15,7 @@ class PersonViewController: UIViewController {
         super.viewDidLoad()
         personTable.dataSource = self
         personTable.delegate = self
+        personTable.tableFooterView = UIView(frame: CGRect.zero)
         personTable.register(UINib(nibName: "PersonTableViewCell", bundle: nil), forCellReuseIdentifier: "PersonTableViewCell")
         
         
@@ -39,11 +40,8 @@ class PersonViewController: UIViewController {
             } catch let error {
                 print(error, "ERROR")
             }
-            
         }.resume()
-        
     }
-
 }
 
 
@@ -60,7 +58,11 @@ extension PersonViewController: UITableViewDataSource, UITableViewDelegate {
         return cell ?? UITableViewCell()
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tap")
+        personTable.deselectRow(at: indexPath, animated: true)
+        let storyboard = UIStoryboard(name: "PersonViewControllerInfo", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(identifier: "PersonViewControllerInfo") as? PersonViewControllerInfo else {  return }
+        vc.user = json[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

@@ -11,6 +11,12 @@
 		4466252A2361AD0900A08B87 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446625292361AD0900A08B87 /* CompanyViewController.swift */; };
 		4466252D2361AE2800A08B87 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466252B2361AE2800A08B87 /* PersonTableViewCell.swift */; };
 		4466252E2361AE2800A08B87 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4466252C2361AE2800A08B87 /* PersonTableViewCell.xib */; };
+		4498940C2364B59C00FA3F45 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498940A2364B59C00FA3F45 /* CompanyTableViewCell.swift */; };
+		4498940D2364B59C00FA3F45 /* CompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4498940B2364B59C00FA3F45 /* CompanyTableViewCell.xib */; };
+		449894122364C8C300FA3F45 /* PersonViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449894102364C8C300FA3F45 /* PersonViewControllerInfo.swift */; };
+		449894152364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449894142364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard */; };
+		449894172364CD5100FA3F45 /* CompanyViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449894162364CD5100FA3F45 /* CompanyViewControllerInfo.swift */; };
+		449894192364CD5E00FA3F45 /* CompanyViewControllerInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449894182364CD5E00FA3F45 /* CompanyViewControllerInfo.storyboard */; };
 		449B8A752360C14E0020B940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B8A742360C14E0020B940 /* AppDelegate.swift */; };
 		449B8A772360C14E0020B940 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B8A762360C14E0020B940 /* SceneDelegate.swift */; };
 		449B8A792360C14E0020B940 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B8A782360C14E0020B940 /* PersonViewController.swift */; };
@@ -24,6 +30,12 @@
 		446625292361AD0900A08B87 /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		4466252B2361AE2800A08B87 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		4466252C2361AE2800A08B87 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
+		4498940A2364B59C00FA3F45 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		4498940B2364B59C00FA3F45 /* CompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTableViewCell.xib; sourceTree = "<group>"; };
+		449894102364C8C300FA3F45 /* PersonViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewControllerInfo.swift; sourceTree = "<group>"; };
+		449894142364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonViewControllerInfo.storyboard; sourceTree = "<group>"; };
+		449894162364CD5100FA3F45 /* CompanyViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewControllerInfo.swift; sourceTree = "<group>"; };
+		449894182364CD5E00FA3F45 /* CompanyViewControllerInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompanyViewControllerInfo.storyboard; sourceTree = "<group>"; };
 		449B8A712360C14E0020B940 /* Filistovich_Ruslan_JSON_wh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filistovich_Ruslan_JSON_wh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		449B8A742360C14E0020B940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		449B8A762360C14E0020B940 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,8 +69,28 @@
 		446625302361AE7A00A08B87 /* CompanyTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				4498940A2364B59C00FA3F45 /* CompanyTableViewCell.swift */,
+				4498940B2364B59C00FA3F45 /* CompanyTableViewCell.xib */,
 			);
 			path = CompanyTableViewCell;
+			sourceTree = "<group>";
+		};
+		4498940E2364C7A700FA3F45 /* PersonViewControllerInfo */ = {
+			isa = PBXGroup;
+			children = (
+				449894102364C8C300FA3F45 /* PersonViewControllerInfo.swift */,
+				449894142364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard */,
+			);
+			path = PersonViewControllerInfo;
+			sourceTree = "<group>";
+		};
+		4498940F2364C7D400FA3F45 /* CompanyViewControllerInfo */ = {
+			isa = PBXGroup;
+			children = (
+				449894162364CD5100FA3F45 /* CompanyViewControllerInfo.swift */,
+				449894182364CD5E00FA3F45 /* CompanyViewControllerInfo.storyboard */,
+			);
+			path = CompanyViewControllerInfo;
 			sourceTree = "<group>";
 		};
 		449B8A682360C14E0020B940 = {
@@ -84,6 +116,8 @@
 				449B8A762360C14E0020B940 /* SceneDelegate.swift */,
 				449B8A782360C14E0020B940 /* PersonViewController.swift */,
 				446625292361AD0900A08B87 /* CompanyViewController.swift */,
+				4498940E2364C7A700FA3F45 /* PersonViewControllerInfo */,
+				4498940F2364C7D400FA3F45 /* CompanyViewControllerInfo */,
 				4466252F2361AE3300A08B87 /* PersonTableViewCell */,
 				446625302361AE7A00A08B87 /* CompanyTableViewCell */,
 				446625272360CAD400A08B87 /* UserModelBase.swift */,
@@ -155,7 +189,10 @@
 			files = (
 				449B8A812360C1530020B940 /* LaunchScreen.storyboard in Resources */,
 				4466252E2361AE2800A08B87 /* PersonTableViewCell.xib in Resources */,
+				4498940D2364B59C00FA3F45 /* CompanyTableViewCell.xib in Resources */,
 				449B8A7E2360C1530020B940 /* Assets.xcassets in Resources */,
+				449894192364CD5E00FA3F45 /* CompanyViewControllerInfo.storyboard in Resources */,
+				449894152364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard in Resources */,
 				449B8A7C2360C14E0020B940 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,8 +207,11 @@
 				449B8A792360C14E0020B940 /* PersonViewController.swift in Sources */,
 				446625282360CAD400A08B87 /* UserModelBase.swift in Sources */,
 				449B8A752360C14E0020B940 /* AppDelegate.swift in Sources */,
+				449894122364C8C300FA3F45 /* PersonViewControllerInfo.swift in Sources */,
+				4498940C2364B59C00FA3F45 /* CompanyTableViewCell.swift in Sources */,
 				4466252D2361AE2800A08B87 /* PersonTableViewCell.swift in Sources */,
 				449B8A772360C14E0020B940 /* SceneDelegate.swift in Sources */,
+				449894172364CD5100FA3F45 /* CompanyViewControllerInfo.swift in Sources */,
 				4466252A2361AD0900A08B87 /* CompanyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
