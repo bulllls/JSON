@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JgP-4j-ujd">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Компании-->
+        <scene sceneID="bhj-Wj-hjM">
+            <objects>
+                <viewController id="Gos-hF-rOe" customClass="CompanyViewController" customModule="Filistovich_Ruslan_JSON_wh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k5O-S6-clR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Oyc-gT-TxT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Компании" image="briefcase" catalog="system" id="BkQ-ZB-JC6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ia-qf-h0N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="116"/>
+        </scene>
+        <!--Сотрудники-->
+        <scene sceneID="IBc-w6-NHs">
+            <objects>
+                <viewController id="xye-PY-67N" customClass="PersonViewController" customModule="Filistovich_Ruslan_JSON_wh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ewt-Zp-17b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mVf-R6-btq">
+                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RPZ-tE-UD2" firstAttribute="trailing" secondItem="mVf-R6-btq" secondAttribute="trailing" id="3vi-Ik-nNT"/>
+                            <constraint firstItem="RPZ-tE-UD2" firstAttribute="bottom" secondItem="mVf-R6-btq" secondAttribute="bottom" id="coP-oG-SMK"/>
+                            <constraint firstItem="mVf-R6-btq" firstAttribute="top" secondItem="RPZ-tE-UD2" secondAttribute="top" id="hiR-Y9-akQ"/>
+                            <constraint firstItem="mVf-R6-btq" firstAttribute="leading" secondItem="RPZ-tE-UD2" secondAttribute="leading" id="leK-Ku-qb8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RPZ-tE-UD2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Сотрудники" image="person.2" catalog="system" id="qcG-Ef-C50"/>
+                    <connections>
+                        <outlet property="personTable" destination="mVf-R6-btq" id="Ma5-tG-d11"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sf-M7-YCe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="-537"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="v3q-Kv-Ifj">
+            <objects>
+                <tabBarController id="JgP-4j-ujd" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UYN-UB-PwM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xye-PY-67N" kind="relationship" relationship="viewControllers" id="S0W-b6-ajj"/>
+                        <segue destination="Gos-hF-rOe" kind="relationship" relationship="viewControllers" id="UFQ-GM-6zB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ioN-Ge-3Wi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="-210"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="briefcase" catalog="system" width="64" height="50"/>
+        <image name="person.2" catalog="system" width="64" height="40"/>
+    </resources>
+</document>
