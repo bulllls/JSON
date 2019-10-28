@@ -27,7 +27,6 @@ class PersonViewController: UIViewController {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             
             guard let data = data else { return }
-            print(data, "DATA")
             guard error == nil else { return }
             do {
                 
@@ -35,7 +34,6 @@ class PersonViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.personTable.reloadData()
                 }
-                print(json, "DATA DECODE")
                 
             } catch let error {
                 print(error, "ERROR")
@@ -64,5 +62,4 @@ extension PersonViewController: UITableViewDataSource, UITableViewDelegate {
         vc.user = json[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
 }

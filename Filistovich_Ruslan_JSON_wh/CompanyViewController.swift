@@ -40,7 +40,6 @@ extension CompanyViewController: UITableViewDataSource, UITableViewDelegate {
         vc.user = json[indexPath.row]
         vc.employees = json.filter{$0.company == json[indexPath.row].company}
         self.navigationController?.pushViewController(vc, animated: true)
-        print("START", vc.employees)
         
     }
     

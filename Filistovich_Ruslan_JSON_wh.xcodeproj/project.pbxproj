@@ -17,6 +17,7 @@
 		449894152364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449894142364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard */; };
 		449894172364CD5100FA3F45 /* CompanyViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449894162364CD5100FA3F45 /* CompanyViewControllerInfo.swift */; };
 		449894192364CD5E00FA3F45 /* CompanyViewControllerInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449894182364CD5E00FA3F45 /* CompanyViewControllerInfo.storyboard */; };
+		4498941C2365053B00FA3F45 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498941B2365053B00FA3F45 /* URLSession.swift */; };
 		449B8A752360C14E0020B940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B8A742360C14E0020B940 /* AppDelegate.swift */; };
 		449B8A772360C14E0020B940 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B8A762360C14E0020B940 /* SceneDelegate.swift */; };
 		449B8A792360C14E0020B940 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B8A782360C14E0020B940 /* PersonViewController.swift */; };
@@ -36,6 +37,7 @@
 		449894142364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonViewControllerInfo.storyboard; sourceTree = "<group>"; };
 		449894162364CD5100FA3F45 /* CompanyViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewControllerInfo.swift; sourceTree = "<group>"; };
 		449894182364CD5E00FA3F45 /* CompanyViewControllerInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompanyViewControllerInfo.storyboard; sourceTree = "<group>"; };
+		4498941B2365053B00FA3F45 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		449B8A712360C14E0020B940 /* Filistovich_Ruslan_JSON_wh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filistovich_Ruslan_JSON_wh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		449B8A742360C14E0020B940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		449B8A762360C14E0020B940 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 			path = CompanyViewControllerInfo;
 			sourceTree = "<group>";
 		};
+		4498941A2365041B00FA3F45 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4498941B2365053B00FA3F45 /* URLSession.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		449B8A682360C14E0020B940 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 				449B8A762360C14E0020B940 /* SceneDelegate.swift */,
 				449B8A782360C14E0020B940 /* PersonViewController.swift */,
 				446625292361AD0900A08B87 /* CompanyViewController.swift */,
+				4498941A2365041B00FA3F45 /* Networking */,
 				4498940E2364C7A700FA3F45 /* PersonViewControllerInfo */,
 				4498940F2364C7D400FA3F45 /* CompanyViewControllerInfo */,
 				4466252F2361AE3300A08B87 /* PersonTableViewCell */,
@@ -206,6 +217,7 @@
 			files = (
 				449B8A792360C14E0020B940 /* PersonViewController.swift in Sources */,
 				446625282360CAD400A08B87 /* UserModelBase.swift in Sources */,
+				4498941C2365053B00FA3F45 /* URLSession.swift in Sources */,
 				449B8A752360C14E0020B940 /* AppDelegate.swift in Sources */,
 				449894122364C8C300FA3F45 /* PersonViewControllerInfo.swift in Sources */,
 				4498940C2364B59C00FA3F45 /* CompanyTableViewCell.swift in Sources */,
