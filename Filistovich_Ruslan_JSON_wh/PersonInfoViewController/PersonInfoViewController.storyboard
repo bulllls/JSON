@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Person View Controller Info-->
+        <!--Person Info View Controller-->
         <scene sceneID="GTN-hy-lGQ">
             <objects>
-                <viewController storyboardIdentifier="PersonViewControllerInfo" id="0PZ-GM-utN" customClass="PersonViewControllerInfo" customModule="Filistovich_Ruslan_JSON_wh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PersonInfoViewController" id="0PZ-GM-utN" customClass="PersonInfoViewController" customModule="Filistovich_Ruslan_JSON_wh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bcK-qn-87K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

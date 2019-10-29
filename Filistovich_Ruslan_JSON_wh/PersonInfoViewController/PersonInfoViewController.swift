@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PersonViewControllerInfo: UIViewController {
+class PersonInfoViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!

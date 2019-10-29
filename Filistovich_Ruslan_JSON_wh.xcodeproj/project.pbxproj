@@ -13,8 +13,8 @@
 		4466252E2361AE2800A08B87 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4466252C2361AE2800A08B87 /* PersonTableViewCell.xib */; };
 		4498940C2364B59C00FA3F45 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498940A2364B59C00FA3F45 /* CompanyTableViewCell.swift */; };
 		4498940D2364B59C00FA3F45 /* CompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4498940B2364B59C00FA3F45 /* CompanyTableViewCell.xib */; };
-		449894122364C8C300FA3F45 /* PersonViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449894102364C8C300FA3F45 /* PersonViewControllerInfo.swift */; };
-		449894152364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449894142364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard */; };
+		449894122364C8C300FA3F45 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449894102364C8C300FA3F45 /* PersonInfoViewController.swift */; };
+		449894152364CB8D00FA3F45 /* PersonInfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449894142364CB8D00FA3F45 /* PersonInfoViewController.storyboard */; };
 		449894172364CD5100FA3F45 /* CompanyViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449894162364CD5100FA3F45 /* CompanyViewControllerInfo.swift */; };
 		449894192364CD5E00FA3F45 /* CompanyViewControllerInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449894182364CD5E00FA3F45 /* CompanyViewControllerInfo.storyboard */; };
 		4498941C2365053B00FA3F45 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498941B2365053B00FA3F45 /* URLSession.swift */; };
@@ -33,8 +33,8 @@
 		4466252C2361AE2800A08B87 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
 		4498940A2364B59C00FA3F45 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
 		4498940B2364B59C00FA3F45 /* CompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTableViewCell.xib; sourceTree = "<group>"; };
-		449894102364C8C300FA3F45 /* PersonViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewControllerInfo.swift; sourceTree = "<group>"; };
-		449894142364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonViewControllerInfo.storyboard; sourceTree = "<group>"; };
+		449894102364C8C300FA3F45 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		449894142364CB8D00FA3F45 /* PersonInfoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonInfoViewController.storyboard; sourceTree = "<group>"; };
 		449894162364CD5100FA3F45 /* CompanyViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewControllerInfo.swift; sourceTree = "<group>"; };
 		449894182364CD5E00FA3F45 /* CompanyViewControllerInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompanyViewControllerInfo.storyboard; sourceTree = "<group>"; };
 		4498941B2365053B00FA3F45 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
@@ -77,13 +77,13 @@
 			path = CompanyTableViewCell;
 			sourceTree = "<group>";
 		};
-		4498940E2364C7A700FA3F45 /* PersonViewControllerInfo */ = {
+		4498940E2364C7A700FA3F45 /* PersonInfoViewController */ = {
 			isa = PBXGroup;
 			children = (
-				449894102364C8C300FA3F45 /* PersonViewControllerInfo.swift */,
-				449894142364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard */,
+				449894102364C8C300FA3F45 /* PersonInfoViewController.swift */,
+				449894142364CB8D00FA3F45 /* PersonInfoViewController.storyboard */,
 			);
-			path = PersonViewControllerInfo;
+			path = PersonInfoViewController;
 			sourceTree = "<group>";
 		};
 		4498940F2364C7D400FA3F45 /* CompanyViewControllerInfo */ = {
@@ -127,7 +127,7 @@
 				449B8A782360C14E0020B940 /* PersonViewController.swift */,
 				446625292361AD0900A08B87 /* CompanyViewController.swift */,
 				4498941A2365041B00FA3F45 /* Networking */,
-				4498940E2364C7A700FA3F45 /* PersonViewControllerInfo */,
+				4498940E2364C7A700FA3F45 /* PersonInfoViewController */,
 				4498940F2364C7D400FA3F45 /* CompanyViewControllerInfo */,
 				4466252F2361AE3300A08B87 /* PersonTableViewCell */,
 				446625302361AE7A00A08B87 /* CompanyTableViewCell */,
@@ -203,7 +203,7 @@
 				4498940D2364B59C00FA3F45 /* CompanyTableViewCell.xib in Resources */,
 				449B8A7E2360C1530020B940 /* Assets.xcassets in Resources */,
 				449894192364CD5E00FA3F45 /* CompanyViewControllerInfo.storyboard in Resources */,
-				449894152364CB8D00FA3F45 /* PersonViewControllerInfo.storyboard in Resources */,
+				449894152364CB8D00FA3F45 /* PersonInfoViewController.storyboard in Resources */,
 				449B8A7C2360C14E0020B940 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +219,7 @@
 				446625282360CAD400A08B87 /* UserModelBase.swift in Sources */,
 				4498941C2365053B00FA3F45 /* URLSession.swift in Sources */,
 				449B8A752360C14E0020B940 /* AppDelegate.swift in Sources */,
-				449894122364C8C300FA3F45 /* PersonViewControllerInfo.swift in Sources */,
+				449894122364C8C300FA3F45 /* PersonInfoViewController.swift in Sources */,
 				4498940C2364B59C00FA3F45 /* CompanyTableViewCell.swift in Sources */,
 				4466252D2361AE2800A08B87 /* PersonTableViewCell.swift in Sources */,
 				449B8A772360C14E0020B940 /* SceneDelegate.swift in Sources */,
