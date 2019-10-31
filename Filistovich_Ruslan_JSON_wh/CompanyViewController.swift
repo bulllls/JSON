@@ -42,10 +42,28 @@ extension CompanyViewController: UITableViewDataSource, UITableViewDelegate {
         companyTable.deselectRow(at: indexPath, animated: true)
         let storyboard = UIStoryboard(name: "CompanyInfoViewController", bundle: nil)
         guard let vc = storyboard.instantiateViewController(identifier: "CompanyInfoViewController") as? CompanyInfoViewController else {  return }
-        vc.user = session.dataBasePerson.person[indexPath.row]
+        vc.company = session.dataBasePerson.person[indexPath.row].company
         vc.employees = session.dataBasePerson.person.filter{$0.company == session.dataBasePerson.person[indexPath.row].company}
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
     
 }
+
+
+
+
+
+
+//var json = [User]()
+//ты говорил что "ну это пока так, я потом переделаю" - но так и не переделал 🙁
+//но можешь попробовать сделать как говоришь да, посмотрим что получится.
+
+//class PersonViewControllerInfo: UIViewController {
+//ViewController всегда должно быть в конце названия класса.
+
+//почему ты в CompanyInfo передаешь User? там же надо Company отображать
+
+//попробуй сделать так, чтобы контроллеры не знали какие там лейблы есть у ячейки
+//let cell = tableView.dequeueReusableCell(withIdentifier: "CompanyTableViewCell", for: indexPath) as? CompanyTableViewCell
+//        cell?.companyLabel.text = json[indexPath.row].company.name

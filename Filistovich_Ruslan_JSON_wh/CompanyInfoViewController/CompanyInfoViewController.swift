@@ -13,15 +13,16 @@ class CompanyInfoViewController: UIViewController {
     @IBOutlet weak var catchPhraseLabel: UILabel!
     @IBOutlet weak var bsLabel: UILabel!
     @IBOutlet weak var employeesCompanyTable: UITableView!
-    var user: User!
+    var company: Company!
     var employees = [User]()
     override func viewDidLoad() {
         super.viewDidLoad()
         employeesCompanyTable.dataSource = self
         employeesCompanyTable.delegate = self
-        nameLabel.text = user.company.name
-        catchPhraseLabel.text = user.company.catchPhrase
-        bsLabel.text = user.company.bs
+        
+        nameLabel.text = company.name
+        catchPhraseLabel.text = company.catchPhrase
+        bsLabel.text = company.bs
     }
     
 }
