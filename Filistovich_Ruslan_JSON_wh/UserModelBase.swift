@@ -37,8 +37,7 @@ struct Company: Decodable, Equatable {
     var bs: String
 }
 
-class Json {
-   var json = [User]()
+class PersonDataBase {
+    var person = [User]()
 }
-let json = Json()
 

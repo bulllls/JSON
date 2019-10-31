@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Company View Controller Info-->
+        <!--Company Info View Controller-->
         <scene sceneID="zmo-rc-zzn">
             <objects>
-                <viewController storyboardIdentifier="CompanyViewControllerInfo" id="cTT-q9-OQl" customClass="CompanyViewControllerInfo" customModule="Filistovich_Ruslan_JSON_wh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CompanyInfoViewController" id="cTT-q9-OQl" customClass="CompanyInfoViewController" customModule="Filistovich_Ruslan_JSON_wh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vsm-bs-pLs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

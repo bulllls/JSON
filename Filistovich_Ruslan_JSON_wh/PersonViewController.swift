@@ -16,24 +16,28 @@ class PersonViewController: UIViewController {
         personTable.delegate = self
         personTable.tableFooterView = UIView(frame: CGRect.zero)
         personTable.register(UINib(nibName: "PersonTableViewCell", bundle: nil), forCellReuseIdentifier: "PersonTableViewCell")
-        
-        session.startUrlSession()
-        DispatchQueue.main.async {
-            self.personTable.reloadData()
+        session.startUrlSession() {
+            DispatchQueue.main.async {
+                self.update()
+            }
         }
+    }
+    
+    func update() {
+        self.personTable.reloadData()
     }
 }
 
 
 extension PersonViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return json.json.count
+        return session.dataBasePerson.person.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PersonTableViewCell", for: indexPath) as? PersonTableViewCell
-        cell?.personName.text = json.json[indexPath.row].name
-        cell?.companyName.text = json.json[indexPath.row].company.name
+        cell?.personName.text = session.dataBasePerson.person[indexPath.row].name
+        cell?.personName.text = session.dataBasePerson.person[indexPath.row].company.name
         
         return cell ?? UITableViewCell()
     }
@@ -41,7 +45,7 @@ extension PersonViewController: UITableViewDataSource, UITableViewDelegate {
         personTable.deselectRow(at: indexPath, animated: true)
         let storyboard = UIStoryboard(name: "PersonInfoViewController", bundle: nil)
         guard let vc = storyboard.instantiateViewController(identifier: "PersonInfoViewController") as? PersonInfoViewController else {  return }
-        vc.user = json.json[indexPath.row]
+        vc.user = session.dataBasePerson.person[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CompanyViewControllerInfo: UIViewController {
+class CompanyInfoViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var catchPhraseLabel: UILabel!
     @IBOutlet weak var bsLabel: UILabel!
@@ -26,7 +26,7 @@ class CompanyViewControllerInfo: UIViewController {
     
 }
 
-extension CompanyViewControllerInfo: UITableViewDelegate, UITableViewDataSource {
+extension CompanyInfoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return employees.count
     }
